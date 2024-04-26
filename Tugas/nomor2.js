@@ -2,11 +2,11 @@ const names = ["Abigail", "Alexandra", "Alison", "Amanda", "Angela", "Bella", "C
 
 function searchName(query, limit, cb) {
   const filteredNames = names.filter((name) => name.toLowerCase().includes(query.toLowerCase())).slice(0, limit);
-  cb(filteredNames);
+  return cb(filteredNames);
 }
 
-function callback(result) {
-  alert(result);
+function callback(value) {
+  alert(value);
 }
 
 searchName("an", 3, callback);
