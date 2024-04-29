@@ -12,7 +12,7 @@ function SeleksiNilai(nilaiAwal, nilaiAkhir, dataArray) {
     return "Nilai tidak ditemukan";
   }
 
-  return hasilSeleksi.sort((m, n) => m - n);
+  return hasilSeleksi.sort((a, b) => a - b);
 }
 
 console.log(SeleksiNilai(5, 20, [2, 25, 4, 14, 17, 30, 8]));
